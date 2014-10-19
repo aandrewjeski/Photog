@@ -14,11 +14,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
+        
+        self.setupParse()
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        // If there's a logged in user, then present the main UI
+        
+        if PFUser.currentUser() == nil {
+            println("User does not exist")
+        }
+        else {
+            println("New user!")
+        }
+        
+        // Else, present UI for logging in or creating an account
+        
+        self.window!.rootViewController = viewController
+        self.window!.makeKeyAndVisible()
+        
         return true
     }
-
+    
+    func setupParse() {
+        Parse.setApplicationId("0f0tsEGW8H6JP4SMCPuKOPkxIpIVZI2qqeWJJqne", clientKey: "ynWR8bkSwrPvt7byRja9SrSYjI6YthVTHQbgidq1")
+        
+//        var testObject = PFObject(className: "TestObject")
+//        testObject["foo"] = "bar"
+//        testObject.saveInBackground()
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
