@@ -19,12 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupParse()
         
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+                self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var navigationController = UINavigationController()
+        var startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
+        startViewController.view.backgroundColor = UIColor.yellowColor()
         
         // If there's a logged in user, then present the main UI
         
         if PFUser.currentUser() == nil {
-            println("User does not exist")
+            navigationController.viewControllers = [startViewController]
         }
         else {
             println("New user!")
@@ -32,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Else, present UI for logging in or creating an account
         
-        self.window!.rootViewController = viewController
+        self.window!.rootViewController = navigationController
         self.window!.makeKeyAndVisible()
         
         return true
