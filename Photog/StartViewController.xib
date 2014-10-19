@@ -14,11 +14,17 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-kv-hTX" customClass="StartViewControllerBackground">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-kv-hTX" customClass="StartViewControllerBackground">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hu3-kv-hTX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2kb-Nf-XQO"/>
+                <constraint firstAttribute="bottom" secondItem="hu3-kv-hTX" secondAttribute="bottom" id="3fP-ia-mxF"/>
+                <constraint firstAttribute="trailing" secondItem="hu3-kv-hTX" secondAttribute="trailing" id="Jgg-nX-qrv"/>
+                <constraint firstItem="hu3-kv-hTX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nVy-7I-MVL"/>
+            </constraints>
         </view>
     </objects>
     <resources>
