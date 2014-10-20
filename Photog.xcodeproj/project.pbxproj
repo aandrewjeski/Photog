@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B1C5B6D19F3692700036613 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C5B6B19F3692700036613 /* StartViewController.swift */; };
 		0B1C5B6E19F3692700036613 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C5B6C19F3692700036613 /* StartViewController.xib */; };
+		0B1C5B7019F5466700036613 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C5B6F19F5466700036613 /* View.xib */; };
+		0B1C5B7319F5850400036613 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1C5B7119F5850400036613 /* AuthViewController.swift */; };
+		0B1C5B7419F5850400036613 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B1C5B7219F5850400036613 /* AuthViewController.xib */; };
 		0B7668B919E81BB4004048A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7668B819E81BB4004048A7 /* AppDelegate.swift */; };
 		0B7668C019E81BB4004048A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7668BF19E81BB4004048A7 /* Images.xcassets */; };
 		0B7668C319E81BB4004048A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7668C119E81BB4004048A7 /* LaunchScreen.xib */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		0B1C5B6B19F3692700036613 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0B1C5B6C19F3692700036613 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		0B1C5B6F19F5466700036613 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		0B1C5B7119F5850400036613 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		0B1C5B7219F5850400036613 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
 		0B7668B319E81BB4004048A7 /* Photog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7668B719E81BB4004048A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7668B819E81BB4004048A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0B1C5B7519F5852900036613 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B1C5B6B19F3692700036613 /* StartViewController.swift */,
+				0B1C5B6C19F3692700036613 /* StartViewController.xib */,
+				0B1C5B7119F5850400036613 /* AuthViewController.swift */,
+				0B1C5B7219F5850400036613 /* AuthViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		0B7668AA19E81BB4004048A7 = {
 			isa = PBXGroup;
 			children = (
@@ -134,13 +151,13 @@
 			isa = PBXGroup;
 			children = (
 				0B7668B819E81BB4004048A7 /* AppDelegate.swift */,
-				0B1C5B6B19F3692700036613 /* StartViewController.swift */,
-				0B1C5B6C19F3692700036613 /* StartViewController.xib */,
+				0B1C5B7519F5852900036613 /* View Controllers */,
 				0B7668BF19E81BB4004048A7 /* Images.xcassets */,
 				0B7668C119E81BB4004048A7 /* LaunchScreen.xib */,
 				0B7668B619E81BB4004048A7 /* Supporting Files */,
 				0B76690619E8E5C8004048A7 /* Photog-Bridging-Header.h */,
 				0B1C5B6A19F1A59500036613 /* Frameworks */,
+				0B1C5B6F19F5466700036613 /* View.xib */,
 			);
 			path = Photog;
 			sourceTree = "<group>";
@@ -250,7 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1C5B7019F5466700036613 /* View.xib in Resources */,
 				0B7668C319E81BB4004048A7 /* LaunchScreen.xib in Resources */,
+				0B1C5B7419F5850400036613 /* AuthViewController.xib in Resources */,
 				0B7668C019E81BB4004048A7 /* Images.xcassets in Resources */,
 				0B1C5B6E19F3692700036613 /* StartViewController.xib in Resources */,
 			);
@@ -271,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7668B919E81BB4004048A7 /* AppDelegate.swift in Sources */,
+				0B1C5B7319F5850400036613 /* AuthViewController.swift in Sources */,
 				0B1C5B6D19F3692700036613 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

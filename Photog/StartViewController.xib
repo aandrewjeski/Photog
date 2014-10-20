@@ -11,22 +11,38 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-kv-hTX" customClass="StartViewControllerBackground">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-kv-hTX">
+                    <rect key="frame" x="0.0" y="0.0" width="338" height="600"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re3-23-K73">
-                    <rect key="frame" x="10" y="546" width="580" height="44"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re3-23-K73">
+                    <rect key="frame" x="10" y="385" width="318" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="MNI-8x-n93"/>
                     </constraints>
                     <state key="normal" title="Sign In">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="DBQ-tF-2A8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtp-Aa-ys6">
+                    <rect key="frame" x="10" y="329" width="318" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="MQM-KR-CaP"/>
+                    </constraints>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="didTapSignUp:" destination="-1" eventType="touchUpInside" id="sOL-8I-LfV"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,9 +52,16 @@
                 <constraint firstAttribute="trailing" secondItem="hu3-kv-hTX" secondAttribute="trailing" id="Jgg-nX-qrv"/>
                 <constraint firstAttribute="bottom" secondItem="Re3-23-K73" secondAttribute="bottom" constant="10" id="MbX-SJ-qsF"/>
                 <constraint firstItem="Re3-23-K73" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="SeV-ZG-PPh"/>
-                <constraint firstItem="Re3-23-K73" firstAttribute="leading" secondItem="hu3-kv-hTX" secondAttribute="trailing" constant="-590" id="aU3-hH-msG"/>
+                <constraint firstItem="Re3-23-K73" firstAttribute="top" secondItem="dtp-Aa-ys6" secondAttribute="bottom" constant="10" id="c4y-JY-ggG"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Re3-23-K73" secondAttribute="bottom" constant="10" id="dj9-oI-fOM"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Re3-23-K73" secondAttribute="trailing" constant="10" id="eVc-Dk-gSa"/>
+                <constraint firstItem="dtp-Aa-ys6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="eVj-Sg-y5Z"/>
+                <constraint firstAttribute="trailing" secondItem="dtp-Aa-ys6" secondAttribute="trailing" constant="10" id="eqs-Av-K5X"/>
                 <constraint firstItem="hu3-kv-hTX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nVy-7I-MVL"/>
+                <constraint firstItem="Re3-23-K73" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="tDa-sB-37r"/>
             </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="113" y="63.5"/>
         </view>
     </objects>
     <resources>
