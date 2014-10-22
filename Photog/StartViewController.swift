@@ -14,7 +14,6 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = true
-        
     }
 
     override func didReceiveMemoryWarning() {

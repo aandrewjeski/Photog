@@ -19,11 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupParse()
         
-                self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.setupAppAppearance()
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         var navigationController = UINavigationController()
         var startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
-        startViewController.view.backgroundColor = UIColor.yellowColor()
         
         // If there's a logged in user, then present the main UI
         
@@ -45,9 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setupParse() {
         Parse.setApplicationId("0f0tsEGW8H6JP4SMCPuKOPkxIpIVZI2qqeWJJqne", clientKey: "ynWR8bkSwrPvt7byRja9SrSYjI6YthVTHQbgidq1")
         
-//        var testObject = PFObject(className: "TestObject")
-//        testObject["foo"] = "bar"
-//        testObject.saveInBackground()
+        //        var testObject = PFObject(className: "TestObject")
+        //        testObject["foo"] = "bar"
+        //        testObject.saveInBackground()
+    }
+    
+    func setupAppAppearance() {
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     }
     
     func applicationWillResignActive(application: UIApplication) {

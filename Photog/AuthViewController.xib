@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="Photog" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="Rur-nY-0D6" id="qHS-tI-Eog"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -42,7 +43,7 @@
                 <constraint firstItem="Rur-nY-0D6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ahl-9U-TdD"/>
                 <constraint firstItem="09X-AT-OGJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qAj-Y1-LJ9"/>
             </constraints>
-            <point key="canvasLocation" x="315" y="134"/>
+            <point key="canvasLocation" x="315" y="84"/>
         </view>
     </objects>
 </document>
