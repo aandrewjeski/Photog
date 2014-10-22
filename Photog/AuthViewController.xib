@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="Photog" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="Rur-nY-0D6" id="qHS-tI-Eog"/>
+                <outlet property="passwordTextField" destination="09X-AT-OGJ" id="Ncp-Xb-Yro"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
