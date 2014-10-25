@@ -100,10 +100,10 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
             (user: PFUser!, error: NSError!) -> Void in
             
             if (user != nil) {
-                println("success")
+                println("sign in success")
             }
             else {
-                println("failure")
+                println("sign in failure")
             }
         }
     }
@@ -118,10 +118,10 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
             (succeeded: Bool!, error: NSError!) -> Void in
             
             if error == nil {
-                println("success")
+                println("sign up success")
             }
             else {
-                println("failure")
+                println("sign up failure")
             }
         }
         
