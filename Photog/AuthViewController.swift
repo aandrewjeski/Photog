@@ -8,14 +8,8 @@
 
 import UIKit
 
-enum AuthMode {
-    case SignIn
-    case SignUp
-}
-
 class AuthViewController: UIViewController, UITextFieldDelegate {
     
-    var authMode: AuthMode = AuthMode.SignUp
     @IBOutlet var emailTextField: UITextField?
     @IBOutlet var passwordTextField: UITextField?
     
@@ -78,53 +72,17 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     }
     
     func authenticate() {
-        var email = self.emailTextField?.text
-        var password = self.passwordTextField?.text
-        
-        if (email?.isEmpty == true || password?.isEmpty == true || email?.isEmailAddress() == false) {
-            self.showAlert("Invalid E-mail")
-            
-            return
-        }
-        
-        if authMode == .SignIn {
-            self.signIn(email!, password: password!)
-        }
-        else {
-            self.signUp(email!, password: password!)
-        }
+        println("authenticate!")
     }
     
-    func signIn(email: String, password: String) {
-        PFUser.logInWithUsernameInBackground(email, password: password) {
-            (user: PFUser!, error: NSError!) -> Void in
-            
-            if (user != nil) {
-                println("sign in success")
-            }
-            else {
-                println("sign in failure")
-            }
-        }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    
-    func signUp(email: String, password: String) {
-        var user = PFUser()
-        user.username = email
-        user.email = email
-        user.password = password
-        
-        user.signUpInBackgroundWithBlock {
-            (succeeded: Bool!, error: NSError!) -> Void in
-            
-            if error == nil {
-                println("sign up success")
-            }
-            else {
-                println("sign up failure")
-            }
-        }
-        
-    }
+    */
 
 }
