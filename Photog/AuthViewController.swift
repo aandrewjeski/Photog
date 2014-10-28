@@ -8,8 +8,15 @@
 
 import UIKit
 
+enum AuthMode
+{
+    case SignIn
+    case SignUp
+}
+
 class AuthViewController: UIViewController, UITextFieldDelegate {
     
+    var authMode: AuthMode = AuthMode.SignUp
     @IBOutlet var emailTextField: UITextField?
     @IBOutlet var passwordTextField: UITextField?
     
@@ -85,7 +92,19 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        // otherwise, authenticate
+        if authMode == .SignIn {
+            self.signIn(email!, password: password!)
+        }
+        else {
+            self.signUp(email!, password: password!)
+        }
+    }
+    
+    func signIn(email: String, password: String) {
+        println("sign in")
+    }
+    func signUp(email: String, password: String) {
+        println("sign up")
     }
     
 }
