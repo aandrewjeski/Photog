@@ -57,32 +57,35 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if (textField == self.emailTextField) {
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+        if (textField == self.emailTextField)
+        {
             self.emailTextField?.resignFirstResponder()
             self.passwordTextField?.becomeFirstResponder()
-            
         }
-        else if (textField == self.emailTextField) {
+        else if (textField == self.passwordTextField)
+        {
             self.passwordTextField?.resignFirstResponder()
-            
             self.authenticate()
+            
         }
         return true
     }
     
-    func authenticate() {
-        println("authenticate!")
+    func authenticate()
+    {
+        var email = self.emailTextField?.text
+        var password = self.passwordTextField?.text
+        
+        if (email?.isEmpty == true || password?.isEmpty == true || email?.isEmailAddress() == false)
+        {
+            println("invalid e-mail")
+            
+            return
+        }
+        
+        // otherwise, authenticate
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

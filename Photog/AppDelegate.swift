@@ -45,10 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupParse() {
         Parse.setApplicationId("0f0tsEGW8H6JP4SMCPuKOPkxIpIVZI2qqeWJJqne", clientKey: "ynWR8bkSwrPvt7byRja9SrSYjI6YthVTHQbgidq1")
-        
-        //        var testObject = PFObject(className: "TestObject")
-        //        testObject["foo"] = "bar"
-        //        testObject.saveInBackground()
     }
     
     func setupAppAppearance() {
