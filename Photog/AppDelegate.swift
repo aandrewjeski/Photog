@@ -26,16 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var navigationController = UINavigationController()
         var startViewController = StartViewController(nibName: "StartViewController", bundle: nil)
         
-        // If there's a logged in user, then present the main UI
-        
         if PFUser.currentUser() == nil {
             navigationController.viewControllers = [startViewController]
         }
         else {
-            println("New user!")
+            var tabBarController = TabBarController()
+            navigationController.viewControllers = [startViewController, tabBarController]
         }
-        
-        // Else, present UI for logging in or creating an account
         
         self.window!.rootViewController = navigationController
         self.window!.makeKeyAndVisible()
