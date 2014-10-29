@@ -50,7 +50,7 @@
                 <constraint firstItem="Rur-nY-0D6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ahl-9U-TdD"/>
                 <constraint firstItem="09X-AT-OGJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qAj-Y1-LJ9"/>
             </constraints>
-            <point key="canvasLocation" x="318" y="81"/>
+            <point key="canvasLocation" x="483" y="68"/>
         </view>
     </objects>
 </document>

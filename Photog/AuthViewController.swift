@@ -127,7 +127,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
             if error == nil
             {
-                self.follow(user, completionHandler: {
+                NetworkManager.sharedInstance.follow(user, completionHandler: {
                     (error) -> () in
                     
                     if error == nil {
@@ -137,7 +137,9 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
                     else {
                         println("Unable to follow")
                     }
+                    
                 })
+                
             }
             else {
                 println("sign up failure")
@@ -145,8 +147,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func follow(user: PFUser!, completionHandler:(error: NSError?) -> ())
-    {
+    func follow(user: PFUser!, completionHandler:(error: NSError?) -> ()) {
         var relation = PFUser.currentUser().relationForKey("following")
         relation.addObject(user)
         PFUser.currentUser().saveInBackgroundWithBlock({

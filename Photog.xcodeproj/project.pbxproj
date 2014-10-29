@@ -18,8 +18,6 @@
 		0B7668C019E81BB4004048A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7668BF19E81BB4004048A7 /* Images.xcassets */; };
 		0B7668C319E81BB4004048A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B7668C119E81BB4004048A7 /* LaunchScreen.xib */; };
 		0B7668CF19E81BB4004048A7 /* PhotogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7668CE19E81BB4004048A7 /* PhotogTests.swift */; };
-		0B7668DA19E8CFE1004048A7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668D819E8CFE1004048A7 /* Bolts.framework */; };
-		0B7668DB19E8CFE1004048A7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668D919E8CFE1004048A7 /* Parse.framework */; };
 		0B7668DD19E8D01A004048A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668DC19E8D01A004048A7 /* AudioToolbox.framework */; };
 		0B7668DF19E8D025004048A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668DE19E8D025004048A7 /* CFNetwork.framework */; };
 		0B7668E119E8D03E004048A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668E019E8D03E004048A7 /* CoreGraphics.framework */; };
@@ -30,6 +28,9 @@
 		0B7668EB19E8D089004048A7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668EA19E8D089004048A7 /* Security.framework */; };
 		0B7668ED19E8D094004048A7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668EC19E8D094004048A7 /* StoreKit.framework */; };
 		0B7668EF19E8D0A2004048A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668EE19E8D0A2004048A7 /* SystemConfiguration.framework */; };
+		0BB5B0D61A018BFB001175B7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB5B0D51A018BFB001175B7 /* Parse.framework */; };
+		0BB5B0D81A018C06001175B7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB5B0D71A018C06001175B7 /* Bolts.framework */; };
+		0BD7C97B1A0042BF00ECD9FD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7C97A1A0042BF00ECD9FD /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,6 @@
 		0B7668C819E81BB4004048A7 /* PhotogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7668CD19E81BB4004048A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7668CE19E81BB4004048A7 /* PhotogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotogTests.swift; sourceTree = "<group>"; };
-		0B7668D819E8CFE1004048A7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Desktop/parse-library-1.4.1/Bolts.framework"; sourceTree = "<group>"; };
-		0B7668D919E8CFE1004048A7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Desktop/parse-library-1.4.1/Parse.framework"; sourceTree = "<group>"; };
 		0B7668DC19E8D01A004048A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0B7668DE19E8D025004048A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0B7668E019E8D03E004048A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,6 +70,9 @@
 		0B7668EC19E8D094004048A7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0B7668EE19E8D0A2004048A7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0B76690619E8E5C8004048A7 /* Photog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photog-Bridging-Header.h"; sourceTree = "<group>"; };
+		0BB5B0D51A018BFB001175B7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Desktop/parse-library-1.4.2/Parse.framework"; sourceTree = "<group>"; };
+		0BB5B0D71A018C06001175B7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Desktop/parse-library-1.4.2/Bolts.framework"; sourceTree = "<group>"; };
+		0BD7C97A1A0042BF00ECD9FD /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +86,12 @@
 				0B7668E919E8D07F004048A7 /* QuartzCore.framework in Frameworks */,
 				0B7668E719E8D074004048A7 /* MobileCoreServices.framework in Frameworks */,
 				0B7668E519E8D069004048A7 /* libz.dylib in Frameworks */,
+				0BB5B0D61A018BFB001175B7 /* Parse.framework in Frameworks */,
 				0B7668E319E8D045004048A7 /* CoreLocation.framework in Frameworks */,
 				0B7668E119E8D03E004048A7 /* CoreGraphics.framework in Frameworks */,
 				0B7668DF19E8D025004048A7 /* CFNetwork.framework in Frameworks */,
 				0B7668DD19E8D01A004048A7 /* AudioToolbox.framework in Frameworks */,
-				0B7668DA19E8CFE1004048A7 /* Bolts.framework in Frameworks */,
-				0B7668DB19E8CFE1004048A7 /* Parse.framework in Frameworks */,
+				0BB5B0D81A018C06001175B7 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +117,8 @@
 				0B7668E019E8D03E004048A7 /* CoreGraphics.framework */,
 				0B7668DE19E8D025004048A7 /* CFNetwork.framework */,
 				0B7668DC19E8D01A004048A7 /* AudioToolbox.framework */,
-				0B7668D819E8CFE1004048A7 /* Bolts.framework */,
-				0B7668D919E8CFE1004048A7 /* Parse.framework */,
+				0BB5B0D51A018BFB001175B7 /* Parse.framework */,
+				0BB5B0D71A018C06001175B7 /* Bolts.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				0B7668B819E81BB4004048A7 /* AppDelegate.swift */,
+				0BD7C97A1A0042BF00ECD9FD /* NetworkManager.swift */,
 				0B1C5B7519F5852900036613 /* View Controllers */,
 				0B444D8819FFBC0E00BA2194 /* Extensions */,
 				0B7668BF19E81BB4004048A7 /* Images.xcassets */,
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD7C97B1A0042BF00ECD9FD /* NetworkManager.swift in Sources */,
 				0B444D8A19FFBC3700BA2194 /* String+Extensions.swift in Sources */,
 				0B7668B919E81BB4004048A7 /* AppDelegate.swift in Sources */,
 				0B1C5B7319F5850400036613 /* AuthViewController.swift in Sources */,
@@ -426,6 +430,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/aandrewjeski/Desktop/parse-library-1.4.1",
+					"/Users/aandrewjeski/Desktop/parse-library-1.4.2",
 				);
 				INFOPLIST_FILE = Photog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -443,6 +448,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/aandrewjeski/Desktop/parse-library-1.4.1",
+					"/Users/aandrewjeski/Desktop/parse-library-1.4.2",
 				);
 				INFOPLIST_FILE = Photog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
