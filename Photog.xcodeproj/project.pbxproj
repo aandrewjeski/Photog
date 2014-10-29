@@ -30,6 +30,10 @@
 		0B7668EF19E8D0A2004048A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7668EE19E8D0A2004048A7 /* SystemConfiguration.framework */; };
 		0BB5B0D61A018BFB001175B7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB5B0D51A018BFB001175B7 /* Parse.framework */; };
 		0BB5B0D81A018C06001175B7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB5B0D71A018C06001175B7 /* Bolts.framework */; };
+		0BB5B0DB1A018FAE001175B7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5B0D91A018FAE001175B7 /* FeedViewController.swift */; };
+		0BB5B0DC1A018FAE001175B7 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB5B0DA1A018FAE001175B7 /* FeedViewController.xib */; };
+		0BB5B0DF1A01950A001175B7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5B0DD1A01950A001175B7 /* PostCell.swift */; };
+		0BB5B0E01A01950A001175B7 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB5B0DE1A01950A001175B7 /* PostCell.xib */; };
 		0BD7C97B1A0042BF00ECD9FD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7C97A1A0042BF00ECD9FD /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +76,10 @@
 		0B76690619E8E5C8004048A7 /* Photog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photog-Bridging-Header.h"; sourceTree = "<group>"; };
 		0BB5B0D51A018BFB001175B7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Desktop/parse-library-1.4.2/Parse.framework"; sourceTree = "<group>"; };
 		0BB5B0D71A018C06001175B7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Desktop/parse-library-1.4.2/Bolts.framework"; sourceTree = "<group>"; };
+		0BB5B0D91A018FAE001175B7 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0BB5B0DA1A018FAE001175B7 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		0BB5B0DD1A01950A001175B7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		0BB5B0DE1A01950A001175B7 /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		0BD7C97A1A0042BF00ECD9FD /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +139,10 @@
 				0B1C5B7119F5850400036613 /* AuthViewController.swift */,
 				0B1C5B7219F5850400036613 /* AuthViewController.xib */,
 				0B444D8B19FFCA9000BA2194 /* TabBarController.swift */,
+				0BB5B0D91A018FAE001175B7 /* FeedViewController.swift */,
+				0BB5B0DD1A01950A001175B7 /* PostCell.swift */,
+				0BB5B0DE1A01950A001175B7 /* PostCell.xib */,
+				0BB5B0DA1A018FAE001175B7 /* FeedViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -287,7 +299,9 @@
 				0B1C5B7019F5466700036613 /* View.xib in Resources */,
 				0B7668C319E81BB4004048A7 /* LaunchScreen.xib in Resources */,
 				0B1C5B7419F5850400036613 /* AuthViewController.xib in Resources */,
+				0BB5B0E01A01950A001175B7 /* PostCell.xib in Resources */,
 				0B7668C019E81BB4004048A7 /* Images.xcassets in Resources */,
+				0BB5B0DC1A018FAE001175B7 /* FeedViewController.xib in Resources */,
 				0B1C5B6E19F3692700036613 /* StartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +326,8 @@
 				0B1C5B7319F5850400036613 /* AuthViewController.swift in Sources */,
 				0B444D8C19FFCA9000BA2194 /* TabBarController.swift in Sources */,
 				0B1C5B6D19F3692700036613 /* StartViewController.swift in Sources */,
+				0BB5B0DB1A018FAE001175B7 /* FeedViewController.swift in Sources */,
+				0BB5B0DF1A01950A001175B7 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
