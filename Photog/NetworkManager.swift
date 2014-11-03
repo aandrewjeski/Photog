@@ -28,4 +28,8 @@ public class NetworkManager
             completionHandler(error: error)
         })
     }
+    
+    func fetchFeed(completionHandler: (objects: [AnyObject]?, error: NSError?) -> ()) {
+        
+    }
 }

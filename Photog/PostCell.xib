@@ -34,22 +34,22 @@
                             <constraint firstAttribute="height" constant="36" id="j92-UB-BlN"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eml-4c-xGr">
-                        <rect key="frame" x="10" y="46" width="300" height="295"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Eml-4c-xGr">
+                        <rect key="frame" x="10" y="46" width="300" height="300"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="300" id="0F2-2n-dsT"/>
+                            <constraint firstAttribute="height" constant="300" id="glV-yk-Kjg"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Vv8-bk-Zye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5NF-rb-rL0"/>
                     <constraint firstItem="Eml-4c-xGr" firstAttribute="top" secondItem="Vv8-bk-Zye" secondAttribute="bottom" constant="10" id="FiK-W7-1Pk"/>
-                    <constraint firstAttribute="bottom" secondItem="Eml-4c-xGr" secondAttribute="bottom" constant="40" id="UuX-De-SFh"/>
+                    <constraint firstAttribute="bottom" secondItem="Eml-4c-xGr" secondAttribute="bottom" priority="750" constant="40" id="UuX-De-SFh"/>
+                    <constraint firstAttribute="trailing" secondItem="Eml-4c-xGr" secondAttribute="trailing" constant="10" id="XRf-FJ-NtU"/>
                     <constraint firstItem="Eml-4c-xGr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XxQ-uA-uJp"/>
-                    <constraint firstAttribute="trailing" secondItem="Eml-4c-xGr" secondAttribute="trailing" constant="10" id="cUg-4g-PdL"/>
                     <constraint firstItem="Vv8-bk-Zye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oaw-fB-Aar"/>
                     <constraint firstAttribute="trailing" secondItem="Vv8-bk-Zye" secondAttribute="trailing" id="pos-zd-bxd"/>
-                    <constraint firstAttribute="bottom" secondItem="Vv8-bk-Zye" secondAttribute="bottom" constant="345" id="sjW-Ru-BlS"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="313" y="427.5"/>
