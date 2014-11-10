@@ -8,6 +8,8 @@
 
 import Foundation
 
+typealias ObjectsCompletionHandler = (objects: [AnyObject]?, error: NSError?) -> ()
+
 public class NetworkManager
 {
     public class var sharedInstance: NetworkManager
@@ -25,11 +27,40 @@ public class NetworkManager
         relation.addObject(user)
         PFUser.currentUser().saveInBackgroundWithBlock({
             (success, error) -> Void in
+            
             completionHandler(error: error)
+            
         })
     }
     
-    func fetchFeed(completionHandler: (objects: [AnyObject]?, error: NSError?) -> ()) {
-        
+    func fetchFeed(completionHandler: ObjectsCompletionHandler!) {
+        var relation = PFUser.currentUser().relationForKey("following")
+        var query = relation.query()
+        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
+            
+            if error != nil {
+                println("error in following")
+                completionHandler(objects: nil, error: error)
+            }
+            else {
+                println("success in following \(objects)")
+                
+                var postQuery = PFQuery(className: "Post")
+                postQuery.whereKey("User", containedIn: objects)
+                postQuery.orderByDescending("createdAt")
+                postQuery.findObjectsInBackgroundWithBlock({ (objects: [AnyObject]!, error:NSError!) -> Void in
+                    if error != nil {
+                        println("error fetching feed posts")
+                        completionHandler(objects: nil, error: error)
+                    }
+                    else {
+                        println("success fetching feed posts \(objects)")
+                        completionHandler(objects: nil, error: nil)
+                    }
+                })
+            }
+            
+        }
     }
+    
 }
